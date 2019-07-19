@@ -1,0 +1,14 @@
+{
+    "name": "HelloName",
+    "short_name": "Hello",
+    "description": "A minimal Progressive Web App",
+    "display": "standalone",
+    "icons": [{
+        "src": "icon.png",
+        "sizes": "192x192"
+    }],
+    "start_url": "/pwa/hello/",
+    "serviceworker": {
+        "src": "sw.js"
+    }
+}

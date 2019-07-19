@@ -1,0 +1,16 @@
+<!doctype>
+<html>
+    <link rel="manifest" href="manifest.json" >
+    <link rel="shortcut icon" type="png" href="icon.png" >
+    <body>
+        hello
+        <script>
+         if("serviceWorker" in navigator) {
+             navigator.serviceWorker.register("/pwa/hello/sw.js", { scope: "/pwa/hello/" })
+                      .then(function(registration) {
+                          console.log("Service Worker Registered");
+                      });
+         }
+        </script>
+    </body>
+</html>
